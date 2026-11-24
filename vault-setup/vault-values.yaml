@@ -1,0 +1,19 @@
+# Helm values for a local learning cluster.
+# Dev mode is intentionally insecure and ephemeral. Do not use in production.
+server:
+  dev:
+    enabled: true
+    devRootToken: "root"
+  # Vault uses its own ServiceAccount to call Kubernetes TokenReview.
+  serviceAccount:
+    create: true
+    name: vault
+  authDelegator:
+    enabled: true
+
+injector:
+  enabled: true
+
+# Enable the browser UI for exploring Vault during the lab.
+ui:
+  enabled: true

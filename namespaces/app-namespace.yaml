@@ -1,0 +1,5 @@
+# The namespace where our application runs
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: app

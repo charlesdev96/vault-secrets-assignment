@@ -1,0 +1,5 @@
+# The namespace where Vault itself runs
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: vault
